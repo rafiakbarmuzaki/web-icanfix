@@ -12,7 +12,7 @@
 
   /* ---------- WhatsApp links ---------- */
   function waLink(message, numberOverride) {
-    var number = (numberOverride || contact.whatsapp || "6281818862411").replace(/[^\d]/g, "");
+    var number = (numberOverride || contact.whatsapp || "6288224028324").replace(/[^\d]/g, "");
     var base = "https://wa.me/" + number;
     var text = message || messages.default || "Halo ICanFix.ID, saya mau konsultasi servis laptop.";
     return base + "?text=" + encodeURIComponent(text);

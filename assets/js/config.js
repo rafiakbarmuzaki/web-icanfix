@@ -13,11 +13,11 @@ window.ICANFIX_CONFIG = {
 
   contact: {
     // Nomor WhatsApp dalam format internasional tanpa tanda +/spasi
-    whatsapp: "6281818862411",
-    whatsappDisplay: "+62 818-1886-2411",
+    whatsapp: "6288224028324",
+    whatsappDisplay: "+62 882-2402-8324",
     // Nomor WhatsApp kedua (admin)
-    whatsappAlt: "6288224028324",
-    whatsappAltDisplay: "+62 882-2402-8324",
+    whatsappAlt: "6281818862411",
+    whatsappAltDisplay: "+62 818-1886-2411",
     email: "" // isi bila sudah tersedia
   },
 
