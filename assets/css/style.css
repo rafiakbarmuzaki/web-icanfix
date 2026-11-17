@@ -239,6 +239,20 @@ main[id] {
   flex: none;
 }
 
+.brand__logo {
+  display: block;
+  width: 124px;
+  height: auto;
+}
+
+.brand--inv .brand__logo {
+  filter: invert(1);
+}
+
+.brand--sm .brand__logo {
+  width: 88px;
+}
+
 .brand__mark {
   display: grid;
   place-items: center;
