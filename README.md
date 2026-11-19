@@ -63,6 +63,6 @@ assets/favicon.svg      Favicon cadangan
 
 ## Catatan deploy
 
-Situs siap diunggah ke hosting statis (Netlify, Vercel, GitHub Pages, dsb.). Metadata canonical dan Open Graph memakai domain `https://icanfix.id/` — sesuaikan di `index.html` bila domain berbeda.
+Situs siap diunggah ke hosting statis (Netlify, Vercel, GitHub Pages, dsb.). Metadata canonical dan Open Graph memakai domain `https://icanfix.my.id/` - sesuaikan di `index.html`, `robots.txt`, dan `sitemap.xml` bila domain berbeda.
 
 Logo utama memakai asset WhatsApp yang telah di-crop menjadi `assets/img/icanfix-logo.jpg`; asset asli juga dipakai sebagai favicon, Apple touch icon, dan logo Organization pada structured data.
