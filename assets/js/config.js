@@ -18,6 +18,9 @@ window.ICANFIX_CONFIG = {
     // Nomor WhatsApp kedua (admin)
     whatsappAlt: "6281818862411",
     whatsappAltDisplay: "+62 818-1886-2411",
+    // Nomor WhatsApp ketiga (admin)
+    whatsappThird: "6285155097702",
+    whatsappThirdDisplay: "+62 851-5509-7702",
     email: "" // isi bila sudah tersedia
   },
 

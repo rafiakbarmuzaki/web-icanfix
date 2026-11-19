@@ -27,7 +27,8 @@ Semua data kontak utama ada di **`assets/js/config.js`**:
 
 - `contact.whatsapp` — nomor WhatsApp utama format internasional tanpa `+`/spasi (dipakai untuk semua tautan `wa.me`).
 - `contact.whatsappDisplay` — nomor utama yang tampil di halaman.
-- `contact.whatsappAlt` dan `contact.whatsappAltDisplay` — nomor WhatsApp kedua admin (tampil di kontak CTA & footer, tautan memakai `data-wa-alt`).
+- `contact.whatsappAlt` dan `contact.whatsappAltDisplay` — nomor WhatsApp kedua admin.
+- `contact.whatsappThird` dan `contact.whatsappThirdDisplay` — nomor WhatsApp ketiga admin.
 - `brand.instagramHandle` dan `brand.instagramUrl` — handle dan tautan Instagram.
 - `location.area` — area layanan yang tampil.
 - `hours.display` — jam operasional.

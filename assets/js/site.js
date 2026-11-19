@@ -18,7 +18,11 @@
     return base + "?text=" + encodeURIComponent(text);
   }
 
-  document.querySelectorAll("[data-wa], [data-wa-default], [data-wa-alt]").forEach(function (el) {
+  document.querySelectorAll("[data-wa], [data-wa-default], [data-wa-alt], [data-wa-number]").forEach(function (el) {
+    if (el.hasAttribute("data-wa-number")) {
+      el.href = waLink(messages.default, el.getAttribute("data-wa-number"));
+      return;
+    }
     if (el.hasAttribute("data-wa-alt")) {
       el.href = waLink(messages.default, contact.whatsappAlt || contact.whatsapp);
       return;
@@ -44,6 +48,7 @@
   var siteValues = {
     whatsappDisplay: contact.whatsappDisplay,
     whatsappAltDisplay: contact.whatsappAltDisplay,
+    whatsappThirdDisplay: contact.whatsappThirdDisplay,
     instagramHandle: (cfg.brand || {}).instagramHandle,
     area: (cfg.location || {}).area,
     hours: (cfg.hours || {}).display
