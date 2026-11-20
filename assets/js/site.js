@@ -1,5 +1,5 @@
 /* ============================================================
-   ICanFix.ID — interactions
+   ICanFix.ID - interactions
    Vanilla JS. No dependencies. Respects reduced motion.
    ============================================================ */
 (function () {
@@ -269,6 +269,48 @@
     );
 
     revealItems.forEach(function (el) { observer.observe(el); });
+  }
+
+  /* ---------- Theme toggle ---------- */
+  var themeToggle = document.getElementById("theme-toggle");
+  var themeMeta = document.querySelector('meta[name="theme-color"]');
+  var themeMedia = window.matchMedia("(prefers-color-scheme: dark)");
+
+  function applyTheme(theme) {
+    var dark = theme === "dark";
+    if (dark) root.setAttribute("data-theme", "dark");
+    else root.removeAttribute("data-theme");
+
+    if (themeToggle) {
+      themeToggle.setAttribute("aria-pressed", dark ? "true" : "false");
+      themeToggle.setAttribute("aria-label", dark ? "Ganti ke mode terang" : "Ganti ke mode gelap");
+      themeToggle.setAttribute("title", dark ? "Mode terang" : "Mode gelap");
+      var label = themeToggle.querySelector(".sr-only");
+      if (label) label.textContent = dark ? "Mode terang" : "Mode gelap";
+    }
+    if (themeMeta) themeMeta.setAttribute("content", dark ? "#101010" : "#ffffff");
+  }
+
+  applyTheme(root.getAttribute("data-theme") === "dark" ? "dark" : "light");
+
+  if (themeToggle) {
+    themeToggle.addEventListener("click", function () {
+      var next = root.getAttribute("data-theme") === "dark" ? "light" : "dark";
+      applyTheme(next);
+      try {
+        localStorage.setItem("icanfix-theme", next);
+      } catch (e) {}
+    });
+  }
+
+  if (themeMedia.addEventListener) {
+    themeMedia.addEventListener("change", function (event) {
+      var saved = null;
+      try {
+        saved = localStorage.getItem("icanfix-theme");
+      } catch (e) {}
+      if (!saved) applyTheme(event.matches ? "dark" : "light");
+    });
   }
 
   /* ---------- Year ---------- */

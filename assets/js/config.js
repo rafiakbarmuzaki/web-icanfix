@@ -1,5 +1,5 @@
 /* ============================================================
-   ICanFix.ID — central site configuration
+   ICanFix.ID - central site configuration
    Edit business details here. No framework, no dependencies.
    ============================================================ */
 
@@ -25,7 +25,7 @@ window.ICANFIX_CONFIG = {
   },
 
   location: {
-    // Alamat lengkap belum dikonfirmasi — jangan tampilkan alamat fiktif.
+    // Alamat lengkap belum dikonfirmasi, jangan tampilkan alamat fiktif.
     area: "Jakarta & sekitarnya",
     address: "",
     mapsUrl: ""
