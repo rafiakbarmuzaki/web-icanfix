@@ -63,7 +63,7 @@ index.html              Halaman utama
 assets/css/style.css    Seluruh gaya dan breakpoint
 assets/js/config.js     Data bisnis yang mudah diubah
 assets/js/site.js       Menu, tautan WhatsApp, tab perangkat, filter case, slider, animasi
-assets/img/             Foto teroptimasi, logo, dan OG image
+assets/img/             Foto teroptimasi, logo, favicon, dan OG image
 assets/favicon.svg      Favicon cadangan
 ```
 
@@ -71,4 +71,4 @@ assets/favicon.svg      Favicon cadangan
 
 Situs siap diunggah ke hosting statis (Netlify, Vercel, GitHub Pages, dsb.). Metadata canonical dan Open Graph memakai domain `https://icanfix.my.id/` - sesuaikan di `index.html`, `robots.txt`, dan `sitemap.xml` bila domain berbeda.
 
-Logo utama memakai asset WhatsApp yang telah di-crop menjadi `assets/img/icanfix-logo.jpg`; asset asli juga dipakai sebagai favicon, Apple touch icon, dan logo Organization pada structured data.
+Logo utama memakai `assets/img/icanfix-logo.jpg`, sedangkan favicon memakai `assets/img/icanfix-favicon.png` (256×256) agar ikon terbaca jelas di tab browser dan hasil pencarian.
